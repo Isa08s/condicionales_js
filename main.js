@@ -7,8 +7,8 @@
 // let number1 = 12;
 // let number2 = 21;
 // alert(number1 + number2);
-// let year = prompt("Ingrese el año:")
-// alert(year)
+// let year = prompt("Ingrese el año:");
+// alert(year);
 
 // Variables
 // let MyName;
@@ -81,14 +81,14 @@
 //     alert("Muy alto");
 // }
 // else if (year < 2024){
-//     alert("Muy bajo")
+//     alert("Muy bajo");
 // }
 // else {
 //     alert("No es correcto");
 // }
 
 // Operadores logicos
-// or ||
+// or -> ||
 // alert(true || true); //true
 // alert(true || false); //true
 // alert( false || true); // true
@@ -103,27 +103,69 @@
 //     alert("Open!");
 // }
 
-// and &&
+// and -> &&
 // alert(true && true); // true
 // alert(true && false); // false
 // alert(false && true); // false
 // alert( false && false); // false
 
 //solution 
-let userName = prompt('¿Quién eres tú?', '');
+// let userName = prompt('¿Quién eres tú?', '');
+// if (userName == "admin") {
+//     let passWord = prompt('Clave', '');
+//     if (passWord == "Master") {
+//         alert("Bienvenido");
+//     } else if (passWord == '' || passWord == null) {
+//         alert("Cancelado");
+//     } else {
+//         alert("Clave incorrecta");
+//     }
+// } else if (userName == "" || userName == null) {
+//     alert("Cancelado");
+// } else {
+//     alert("No sé quién eres");
+// }
 
-// La verificación de la contraseña debe estar dentro del bloque if de userName
-if (userName === "admin") {
-    let passWord = prompt('Clave', '');
-    if (passWord === "Master") {
-        alert("Bienvenido");
-    } else if (passWord === '' || passWord === null) {
-        alert("Cancelado");
-    } else {
-        alert("Clave incorrecta");
-    }
-} else if (userName === "" || userName === null) {
-    alert("Cancelado");
-} else {
-    alert("No sé quién eres");
+// ciclos while
+// while(condition){
+//     sentences;
+//     sentences;
+// }
+
+// let counter = 0;
+// while (counter < 3){
+//     alert(counter);
+//     counter++;
+// }
+
+// ciclo for
+// for (begin; CSSConditionRule, step);{
+//     for body
+// }
+
+// for(let counter = 0; counter < 3; counter++){
+//     alert(counter);
+// }
+
+// funciones
+// function showMessage(){
+//     alert("Hola mundo");
+// }
+// showMessage();
+// showMessage();
+
+// funciones con variables locales
+// function showMessage(){
+//     let message = "Epale :)"
+//     alert(message);
+// }
+// showMessage();
+// // alert(message);
+
+// Funciones con variables externas
+let userName = "Josefino";
+function showMessage(){
+    let message = "Epale :) " + userName;
+    alert(message);
 }
+showMessage();
